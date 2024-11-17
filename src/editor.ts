@@ -1325,8 +1325,10 @@ export class BarCardEditor extends LitElement implements LovelaceCardEditor {
     `;
   }
 }
+// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
 // @ts-ignore
 window.customCards = window.customCards || [];
+// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
 // @ts-ignore
 window.customCards.push({
   type: 'bar-card',

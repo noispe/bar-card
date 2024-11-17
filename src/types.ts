@@ -11,6 +11,7 @@ export interface BarCardConfig {
   direction: string;
   double_tap_action?: ActionConfig;
   entities: any;
+  extra_entities: string[];
   entity_row: boolean;
   entity: string;
   height: string | number;
