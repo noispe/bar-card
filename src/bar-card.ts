@@ -286,17 +286,17 @@ export class BarCard extends LitElement {
           for (const entity of config.extra_entities) {
             const unit_of_measurement = this.hass?.states[entity]?.attributes['unit_of_measurement'];
             const value = this.hass?.states[entity]?.state;
-            console.log('  ' + entity);
-            console.log('  ' + value);
-            console.log('  ' + unitOfMeasurement);
+            // console.log('  ' + entity);
+            // console.log('  ' + value);
+            // console.log('  ' + unitOfMeasurement);
             const extras = html`
-              <bar-card-extra-entity>${value} ${unitOfMeasurement}</bar-card-extra-entity>
+              <bar-card-extra-entity>${value} ${unit_of_measurement}</bar-card-extra-entity>
             `;
             extraEntities.push(extras);
           }
-          for (const x of extraEntities) {
-            console.log(x);
-          }
+          // for (const x of extraEntities) {
+          //   console.log(x);
+          // }
         }
 
         // Set value html based on position.
